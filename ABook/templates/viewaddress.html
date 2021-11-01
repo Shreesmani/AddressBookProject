@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Address</title>
+</head>
+<body>
+     {% block content %}
+<!-- h1>Results ... </h1>
+     Name : {{ name }}
+     Phone : {{ phonenumber }}
+<br -->
+    <table>
+     <tr>
+        <td>SL No </td> <td> Name </td> <td> Cell Phone </td> <td> Extension </td> <td> Official Email </td> <td>Address</td>
+    </tr>
+   <tr>
+        <td>{{slno}} </td> <td> {{name}} </td> <td> {{phonenumber}} </td> <td> {{extension}} </td> <td> {{email}} </td> <td>{{address}}</td>
+    </tr>
+    </table>
+    {% endblock %}
+
+
+</table>
+</body>
+</html>
