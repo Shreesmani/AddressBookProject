@@ -69,8 +69,11 @@ def viewaddress(request):
 
     # AddressData = AddressClass.objects.all()
 #    Addressdata = AddressClass.objects.all()
-    Addressdata = AddressClass.objects.all()
-    return render(request, "viewaddress.html", {'AddressData': Addressdata})
+    AddressData = AddressClass.objects.all()
+    print(AddressData)
+    #return render(request, 'viewaddress.html', {'AddressData': AddressData})
+    return render(request, 'viewaddress.html', {'slno':AddressClass.slno, 'name': AddressClass.name, 'phonenumber': AddressClass.phonenumber, 'extension': AddressClass.extension, 'email':AddressClass.email, 'address' :AddressClass.address, 'AddressData': AddressData})
+
     # { %
     # for AddressClass in student_number %}
     # {{student.f_name}}

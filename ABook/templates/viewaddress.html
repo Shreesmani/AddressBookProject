@@ -15,17 +15,30 @@
      <tr>
         <td>SL No </td> <td> Name </td> <td> Cell Phone </td> <td> Extension </td> <td> Official Email </td> <td>Address</td>
     </tr>
+        <tr><td colspan="6">Normal</td></tr>
    <tr>
         <td>{{slno}} </td> <td> {{name}} </td> <td> {{phonenumber}} </td> <td> {{extension}} </td> <td> {{email}} </td> <td>{{address}}</td>
     </tr>
-
+    <tr><td colspan="6">AddressData</td></tr>
         <tr>
         <td>{{AddressData.slno}} </td> <td> {{AddressData.name}} </td> <td> {{AddressData.phonenumber}} </td> <td> {{AddressData.extension}} </td> <td> {{AddressData.email}} </td> <td>{{AddressData.address}}</td>
     </tr>
+         <tr><td colspan="6">AddressDisplay</td></tr>
         {% for AddressDisplay in AddressData.objects %}
+
          <tr>
         <td>{{AddressDisplay.slno}} </td> <td> {{AddressDisplay.name}} </td> <td> {{AddressDisplay.phonenumber}} </td> <td> {{AddressDisplay.extension}} </td> <td> {{AddressData.email}} </td> <td>{{AddressData.address}}</td>
     </tr>
+
+        {{AddressDisplay}}
+        {% endfor %}
+        <!-- Demo2 -->
+        {% for AddressDisplay in AddressData.objects %}
+
+         <tr>
+        <td>{{AddressDisplay.slno}} </td> <td> {{AddressDisplay.name}} </td> <td> {{AddressDisplay.phonenumber}} </td> <td> {{AddressDisplay.extension}} </td> <td> {{AddressData.email}} </td> <td>{{AddressData.address}}</td>
+    </tr>
+
         {{AddressDisplay}}
         {% endfor %}
 
