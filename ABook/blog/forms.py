@@ -3,6 +3,7 @@ from django import forms
 from .models import Post
 from django.shortcuts import render
 from django.shortcuts import redirect
+#from ABook.blog.forms import PostForm
 from .forms import PostForm
 from django.utils import timezone
 from django.shortcuts import get_object_or_404

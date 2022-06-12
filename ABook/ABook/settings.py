@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'travel',
     'ABookAPP',
+    'blog',
 #    'phonenumber_field',
 
 ]
